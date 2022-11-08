@@ -1,0 +1,57 @@
+html {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.firstColor {
+    color: #9356DC;
+}
+
+.secondColor {
+    color: #FF79DA;
+}
+
+.thirdColor {
+    color: #92E2D0;
+}
+
+
+header svg {
+    margin: 40px 0 20px 0;
+}
+
+.bandeau {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient( rgb(187, 187, 187), 1%, #f3f3f3);
+
+
+}
+
+
+.flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bandeau p {
+    margin-left: 5px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textAccueil{
+    padding: 35px;
+}
+ 
