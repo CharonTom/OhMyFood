@@ -1,57 +1,175 @@
 html {
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-    max-width: 1400px;
-    margin: 0 auto;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-
-.firstColor {
-    color: #9356DC;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.secondColor {
-    color: #FF79DA;
-}
-
-.thirdColor {
-    color: #92E2D0;
-}
-
-
-header svg {
-    margin: 40px 0 20px 0;
+.header h1 {
+  margin: 25px 0 5px 0;
 }
 
 .bandeau {
-    width: 100%;
-    height: 50px;
-    background: linear-gradient( rgb(187, 187, 187), 1%, #f3f3f3);
-
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(rgb(187, 187, 187), 0.5%, #eaeaea);
+}
+.bandeau__contenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bandeau__contenu p {
+  margin-left: 5px;
 }
 
-
-.flexcenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.section_presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #f6f6f6;
+  padding: 10px 20px 50px 20px;
+  text-align: center;
+}
+.section_presentation h2 {
+  padding: 0 20px 0 20px;
+}
+.section_presentation__p {
+  padding: 35px;
+}
+.section_presentation__btn {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 4px 4px 2px lightgrey;
+  transition: 250ms;
+  cursor: pointer;
+  text-align: center;
+  max-width: 250px;
+  margin-top: 10px;
+}
+.section_presentation__btn:hover {
+  box-shadow: 8px 8px 2px #acabab;
+  filter: brightness(120%);
 }
 
-.bandeau p {
-    margin-left: 5px;
+.section_fonctionnement h2 {
+  margin-left: 15px;
+}
+.section_fonctionnement__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section_fonctionnement__list__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f6f6;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 4px 5px 5px lightgray;
+  padding: 10px 15px 10px 15px;
+  width: 80%;
+  margin: 10px 0 10px 0;
+  position: relative;
+  font-weight: bold;
+}
+.section_fonctionnement__list__btn i {
+  padding-right: 30px;
+  color: #7e7e7e;
+  position: absolute;
+  left: 40px;
+}
+.section_fonctionnement__list__btn .number {
+  position: absolute;
+  left: -12px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding: 4px;
+  background-color: #9356DC;
+  color: #fff;
+  border-radius: 50%;
+}
+.section_fonctionnement__list__btn:hover {
+  filter: brightness(95%);
+  cursor: pointer;
+}
+.section_fonctionnement__list__btn:hover i {
+  color: #9356DC;
 }
 
-.textCenter {
-    text-align: center;
+.section_restaurant {
+  background: #f6f6f6;
+  padding: 30px 0 50px 0;
+}
+.section_restaurant h2 {
+  margin-left: 15px;
+}
+.section_restaurant__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.section_restaurant__list__card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  width: 90%;
+  height: 220px;
+  font-size: 14px;
+  box-shadow: 4px 5px 5px lightgray;
+  display: flex;
+  flex-direction: column;
+}
+.section_restaurant__list__card:hover {
+  cursor: pointer;
+}
+.section_restaurant__list__card img {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+.section_restaurant__list__card h3,
+.section_restaurant__list__card p {
+  font-size: 16px;
+  margin: 5px 0px 0px 10px;
 }
 
-.textAccueil{
-    padding: 35px;
+.footer {
+  background: #353535;
+  color: white;
+  padding: 15px 15px 35px 30px;
 }
- 
+.footer .logofooter {
+  margin: 10px 0 10px 0;
+}
+.footer p {
+  margin: 6px;
+}
+.footer p i {
+  margin-right: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */
