@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>OhMyFood</title>
+    <title>A la Francaise</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,6 @@
 </head>
 
 <body>
-
-    <!--Header -->
-
     <header>
         <div class="header">
             <h1>
@@ -29,91 +26,107 @@
         </div>
     </header>
 
-    <!--Bandeau -->
+    <!--Bandeau-->
 
-    <div class="bandeau">
-        <div class="bandeau__contenu"> <i class="fa-solid fa-location-dot fa-xl"></i>
-            <p>Paris, Belleville</p>
-        </div>
+    <div class="bandeau_alafrancaise">
+        <img src="images/francaise.jpg" alt="Plat à la Française">
     </div>
 
-    <!--section présentation-->
 
-    <section class="section_presentation">
 
-        <h2>Réservez le menu qui vous convient</h2>
-        <p> Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <div class="section_presentation__btn">Explorer nos restaurants</div>
+    <!--Section menu-->
 
-    </section>
+    <div class="section_menu">
 
-    <!--Section fonctionnement-->
-
-    <section class="section_fonctionnement">
-        <h2>Fonctionnement</h2>
-        <div class="section_fonctionnement__list">
-
-            <div class="section_fonctionnement__list__btn">
-                <p class="number">1</p>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <p>Choisissez un restaurant</p>
-            </div>
-            <div class="section_fonctionnement__list__btn">
-                <p class="number">2</p>
-                <i class="fa-solid fa-list-ul"></i>
-                <p>Composez votre menu</p>
-            </div>
-            <div class="section_fonctionnement__list__btn">
-                <p class="number">3</p>
-                <i class="fa-solid fa-store"></i>
-                <p>Dégustez au restaurant</p>
-            </div>
+        <div class="section_menu__titre">
+            <h1>À la française</h1>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
         </div>
-    </section>
 
-    <!--Section restaurant-->
+        <!--Entrées-->
 
-    <section class="section_restaurant">
-        <h2>Restaurants</h2>
-        <div class="section_restaurant__list">
+        <section class="section_menu__entrees">
 
-            <div class="section_restaurant__list__card new heart"><a href="lapalettedugout.html">
-                    <img src="images/palette.jpg" alt="restaurant">
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
-                </a>
+            <h2>ENTRÉES</h2>
+
+            <div class="section_menu__card">
+                <h3>Tartare de poulpe acidulé</h3>
+                <div class="section_menu__card__text">
+                    <p>Aux zestes d'orange</p><b>25€</b>
+                </div>
             </div>
-            <div class="section_restaurant__list__card new heart"><a href="lanoteenchantée.html">
-                    <img src="images/note.jpg" alt="restaurant">
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
-                </a>
+            <div class="section_menu__card">
+                <h3>Velouté de légumes d'antan</h3>
+                <div class="section_menu__card__text">
+                    <p>Carottes, panais, topinambour</p><b>35€</b>
+                </div>
             </div>
-            <div class="section_restaurant__list__card heart"><a href="alafrancaise.html">
-                    <img src="images/francaise.jpg" alt="restaurant">
-                    <h3>A la Française</h3>
-                    <p>Cité Rouge</p>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
-                </a>
+            <div class="section_menu__card">
+                <h3>Soupe à l'oignon</h3>
+                <div class="section_menu__card__text">
+                    <p>Revisitée</p><b>20€</b>
+                </div>
             </div>
-            <div class="section_restaurant__list__card heart"><a href="ledelicedessens.html">
-                    <img src="images/delice.jpg" alt="restaurant">
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
-                </a>
+        </section>
+        <!--Plats-->
+
+
+        <section class="section_menu__plats">
+
+            <h2>PLATS</h2>
+
+            <div class="section_menu__card">
+                <h3>Coquilles Saint-Jacques</h3>
+                <div class="section_menu__card__text">
+                    <p>Accompagnées d'une purée de panais</p><b>40€</b>
+                </div>
+            </div>
+            <div class="section_menu__card">
+                <h3>Magret de canard</h3>
+                <div class="section_menu__card__text">
+                    <p>Et parmentier de pommes de terre</p><b>35€</b>
+                </div>
+            </div>
+            <div class="section_menu__card">
+                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                <div class="section_menu__card__text">
+                    <p>Sur son lit de gnocchis aux légumes</p><b>44€</b>
+                </div>
+            </div>
+        </section>
+
+        <!--Dessert-->
+
+        <section class="section_menu__desserts">
+
+            <h2>DESSERTS</h2>
+
+            <div class="section_menu__card">
+                <h3>Pétales de violettes glacés</h3>
+                <div class="section_menu__card__text">
+                    <p>Aux zestes d'orange</p><b>18€</b>
+                </div>
+            </div>
+            <div class="section_menu__card">
+                <h3>Fondant au chocolat</h3>
+                <div class="section_menu__card__text">
+                    <p>Revisité</p><b>22€</b>
+                </div>
+            </div>
+            <div class="section_menu__card">
+                <h3>Millefeuille croustillant</h3>
+                <div class="section_menu__card__text">
+                    <p>Myrtilles et pâte d’amande</p><b>23€</b>
+                </div>
             </div>
 
-        </div>
-    </section>
 
-    <!--footer -->
+        </section>
+
+        <div class="section_menu__btn">Commander</div>
+    </div>
+
 
     <footer class="footer">
         <svg class="logofooter" width="98" height="17" viewBox="0 0 196 34" fill="#FFF"
@@ -149,6 +162,9 @@
         <p>Mentions légales</p>
         <p>Contact</p>
     </footer>
+
+
+
 
 
 </body>

@@ -1,0 +1,90 @@
+/* Pages à la Française*/
+
+.bandeau_alafrancaise {
+    width: 100%;
+    height: 300px;
+
+    & img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+
+
+.section_menu {
+
+    background: $color-grey;
+    border-radius: 40px 40px 0 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translate(0px, -40px);
+    margin-bottom: -40px;
+    position: relative;
+
+    &__titre {
+
+        & h1 {
+            font-family: "Shrikhand", sans-serif;
+        }
+
+        & i {
+            font-size: 1.5rem;
+            position: absolute;
+            top: 5%;
+            right: 8%;
+        }
+
+        & .fa-solid {
+            color: transparent;
+            background: linear-gradient(170deg, $color-secondary, $color-primary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            transition: all 350ms;
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+        }
+
+
+    }
+
+    &__card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 4px 5px 5px lightgray;
+        padding: 10px 20px 10px 10px;
+        margin-bottom: 15px;
+
+        & h3 {
+            margin: 0 0 5px 0;
+        }
+
+        & p {
+            margin: 0;
+        }
+
+        &__text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    & h2 {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    &__btn {
+        @include btn();
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

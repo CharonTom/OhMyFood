@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 1em;
   font-family: "Roboto", sans-serif;
@@ -140,6 +141,44 @@ body {
   box-shadow: 4px 5px 5px lightgray;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.section_restaurant__list__card.new::before {
+  position: absolute;
+  content: "Nouveau";
+  padding: 5px;
+  border-radius: 2px;
+  background: #92E2D0;
+  color: #195c4d;
+  top: 5%;
+  right: 5%;
+  font-weight: 700;
+}
+.section_restaurant__list__card i {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+}
+.section_restaurant__list__card .fa-solid {
+  color: transparent;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 350ms;
+}
+.section_restaurant__list__card .fa-solid:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.section_restaurant__list__card a {
+  text-decoration: none;
+  color: #181818;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 .section_restaurant__list__card:hover {
   cursor: pointer;
@@ -170,6 +209,91 @@ body {
 }
 .footer p i {
   margin-right: 4px;
+}
+
+/* Pages à la Française*/
+.bandeau_alafrancaise {
+  width: 100%;
+  height: 300px;
+}
+.bandeau_alafrancaise img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.section_menu {
+  background: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translate(0px, -40px);
+  margin-bottom: -40px;
+  position: relative;
+}
+.section_menu__titre h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+.section_menu__titre i {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 5%;
+  right: 8%;
+}
+.section_menu__titre .fa-solid {
+  color: transparent;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 350ms;
+}
+.section_menu__titre .fa-solid:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.section_menu__card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 4px 5px 5px lightgray;
+  padding: 10px 20px 10px 10px;
+  margin-bottom: 15px;
+}
+.section_menu__card h3 {
+  margin: 0 0 5px 0;
+}
+.section_menu__card p {
+  margin: 0;
+}
+.section_menu__card__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section_menu h2 {
+  font-weight: 400;
+  font-size: 20px;
+}
+.section_menu__btn {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 4px 4px 2px lightgrey;
+  transition: 250ms;
+  cursor: pointer;
+  text-align: center;
+  max-width: 250px;
+  margin-top: 10px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.section_menu__btn:hover {
+  box-shadow: 8px 8px 2px #acabab;
+  filter: brightness(120%);
 }
 
 /*# sourceMappingURL=style.css.map */
