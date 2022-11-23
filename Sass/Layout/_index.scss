@@ -13,7 +13,21 @@ body {
 
 
 .header {
+    position: relative;
     @include flexcenter();
+
+    & a {
+        text-decoration: none;
+        color: #181818;
+        position: absolute;
+        display: block;
+        left: 25px;
+        top: 25px;
+    }
+
+    & i {
+        font-size: 25px;
+    }
 
     & h1 {
         margin: 25px 0 5px 0;
@@ -41,7 +55,7 @@ body {
     @include flexcenter();
     flex-direction: column;
     background: $color-grey;
-    padding: 10px 20px 50px 20px;
+    padding: 20px 20px 50px 20px;
     text-align: center;
 
     & h2 {
@@ -49,8 +63,9 @@ body {
     }
 
 
-    &__p {
-        padding: 35px;
+    & p {
+        font-size: 18px;
+
     }
 
     &__btn {
@@ -64,6 +79,8 @@ body {
 
 
 .section_fonctionnement {
+
+    padding: 20px 0 50px 0;
 
     & h2 {
         margin-left: 15px;
@@ -122,7 +139,7 @@ body {
 .section_restaurant {
 
     background: $color-grey;
-    padding: 30px 0 50px 0;
+    padding: 30px 0 60px 0;
 
     & h2 {
         margin-left: 15px;
@@ -173,7 +190,7 @@ body {
             opacity: 0;
             transition: all 350ms;
 
-            &:hover{
+            &:hover {
                 opacity: 1;
                 transform: scale(1.2);
             }
@@ -220,6 +237,11 @@ body {
 
     & .logofooter {
         margin: 10px 0 10px 0;
+    }
+
+    & a {
+        text-decoration: none;
+        color: white;
     }
 
     & p {
