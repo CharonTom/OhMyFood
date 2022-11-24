@@ -290,35 +290,39 @@ body {
   background: white;
   border-radius: 15px;
   box-shadow: 4px 5px 5px lightgray;
-  padding: 10px 20px 10px 10px;
   margin-bottom: 15px;
   animation: appear 3s;
-  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+.section_menu__card__text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0;
   overflow: hidden;
 }
-.section_menu__card h3 {
+.section_menu__card__text h3 {
   margin: 0 0 5px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.section_menu__card p {
+.section_menu__card__text p {
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.section_menu__card__text {
+.section_menu__card__price {
+  margin-left: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  padding: 10px;
 }
 .section_menu__card__check {
-  position: absolute;
-  right: -80px;
-  top: 0;
+  margin-right: -80px;
   width: 80px;
-  height: 100%;
   background: #92E2D0;
   transition: 0.5s;
   display: flex;
@@ -333,7 +337,7 @@ body {
   cursor: pointer;
 }
 .section_menu__card:hover .section_menu__card__check {
-  right: 0px;
+  margin-right: 0px;
 }
 .section_menu__card:hover .section_menu__card__check i {
   animation: rotate 0.5s;

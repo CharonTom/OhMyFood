@@ -77,39 +77,50 @@
         background: white;
         border-radius: 15px;
         box-shadow: 4px 5px 5px lightgray;
-        padding: 10px 20px 10px 10px;
         margin-bottom: 15px;
         animation: appear 3s;
-        position: relative;
         overflow: hidden;
+        display: flex;
 
-        & h3 {
-            margin: 0 0 5px 0;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
 
-        & p {
-            margin: 0;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
 
         &__text {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            margin: 0;
+            
+            overflow: hidden;
+            
+
+            & h3 {
+                margin: 0 0 5px 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            & p {
+                margin: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+
 
         }
 
+        &__price {
+            margin-left: auto;
+            display: flex;
+            align-items: flex-end;
+            padding: 10px;
+        }
+
         &__check {
-            position: absolute;
-            right: -80px;
-            top: 0;
+            margin-right: -80px;
             width: 80px;
-            height: 100%;
             background: $color-third;
             transition: 0.5s;
             @include flexcenter();
@@ -126,8 +137,8 @@
         }
 
         &:hover &__check {
-            right: 0px;
-    
+            margin-right: 0px;
+
             & i {
                 animation: rotate 0.5s;
             }
