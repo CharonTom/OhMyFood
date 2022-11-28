@@ -10,6 +10,30 @@ body {
     padding: 0;
 }
 
+.loader {
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 1;
+    animation: desappear 600ms 2s forwards;
+    @include flexcenter();
+
+    &::after {
+        content: "Hello";
+        @include flexcenter();
+        height: 100px;
+        width: 100px;
+        border-top: solid 3px $color-secondary;
+        border-left: solid 3px $color-primary;
+        border-right: solid 3px $color-third;
+        border-bottom: solid 3px $color-secondary;
+        animation: spin 1s infinite;
+    }
+
+}
+
 
 
 .header {
@@ -17,8 +41,7 @@ body {
     @include flexcenter();
 
     & a {
-        text-decoration: none;
-        color: #181818;
+        @include link(black);
         position: absolute;
         display: block;
         left: 25px;
@@ -65,17 +88,12 @@ body {
 
     & p {
         font-size: 18px;
-
     }
 
     &__btn {
         @include btn();
     }
 }
-
-
-
-
 
 
 .section_fonctionnement {
@@ -93,13 +111,11 @@ body {
     }
 
     &__list__btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexcenter();
         background: $color-grey;
         border: none;
         border-radius: 20px;
-        box-shadow: 4px 5px 5px lightgray;
+        @include box-shadow;
         padding: 10px 15px 10px 15px;
         width: 80%;
         margin: 10px 0 10px 0;
@@ -158,7 +174,7 @@ body {
         width: 90%;
         height: 220px;
         font-size: 14px;
-        box-shadow: 4px 5px 5px lightgray;
+        @include box-shadow;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -184,7 +200,7 @@ body {
 
         & .fa-solid {
             color: transparent;
-            background: linear-gradient(170deg, $color-secondary, $color-primary);
+            @include gradient;
             background-clip: text;
             -webkit-background-clip: text;
             opacity: 0;
@@ -199,8 +215,7 @@ body {
 
         & a {
 
-            text-decoration: none;
-            color: #181818;
+            @include link(black);
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -240,8 +255,7 @@ body {
     }
 
     & a {
-        text-decoration: none;
-        color: white;
+        @include link(white);
     }
 
     & p {
