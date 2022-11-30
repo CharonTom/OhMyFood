@@ -13,19 +13,19 @@
 
             &__card {
                 max-width: 335px;
-                
+
             }
         }
     }
 }
 
 @media (min-width:992px) {
-    .section_fonctionnement__list{
+    .section_fonctionnement__list {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
 
-        &__btn{
+        &__btn {
             width: 26%;
         }
     }
@@ -33,4 +33,18 @@
     .footer {
         text-align: center;
     }
+
+    .section_menu {
+        &__all {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__entrees,
+        &__plats,
+        &__desserts {
+            width: 30%;
+        }
+    }
+
 }

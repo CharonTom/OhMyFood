@@ -10,6 +10,8 @@ body {
     padding: 0;
 }
 
+
+
 .loader {
     position: fixed;
     background-color: white;
@@ -20,18 +22,32 @@ body {
     animation: desappear 600ms 2s forwards;
     @include flexcenter();
 
-    &::after {
-        content: "Hello";
+    & div {
+
         @include flexcenter();
         height: 100px;
         width: 100px;
-        border-top: solid 3px $color-secondary;
-        border-left: solid 3px $color-primary;
-        border-right: solid 3px $color-third;
-        border-bottom: solid 3px $color-secondary;
-        animation: spin 1s infinite;
+        border: solid 10px transparent;
+        border-left-color: $color-primary;
+        border-right-color: $color-third;
+        border-bottom-color: $color-secondary;
+        border-radius: 50%;
+        animation: firstspin 2s infinite;
+        position: relative;
+
     }
 
+    & div:nth-child(2) {
+
+        height: 120px;
+        width: 120px;
+        border: solid 10px transparent;
+        border-left-color: $color-primary;
+        border-top-color: $color-secondary;
+        border-bottom-color: $color-secondary;
+        animation: secondspin 2s infinite;
+        position: absolute;
+    }
 }
 
 
@@ -167,7 +183,6 @@ body {
         gap: 20px;
     }
 
-
     &__list__card {
         background: #FFFFFF;
         border-radius: 20px;
@@ -211,7 +226,6 @@ body {
                 transform: scale(1.2);
             }
         }
-
 
         & a {
 

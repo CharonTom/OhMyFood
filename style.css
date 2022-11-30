@@ -23,18 +23,29 @@ body {
   align-items: center;
   justify-content: center;
 }
-.loader::after {
-  content: "Hello";
+.loader div {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100px;
   width: 100px;
-  border-top: solid 3px #FF79DA;
-  border-left: solid 3px #9356DC;
-  border-right: solid 3px #92E2D0;
-  border-bottom: solid 3px #FF79DA;
-  animation: spin 1s infinite;
+  border: solid 10px transparent;
+  border-left-color: #9356DC;
+  border-right-color: #92E2D0;
+  border-bottom-color: #FF79DA;
+  border-radius: 50%;
+  animation: firstspin 2s infinite;
+  position: relative;
+}
+.loader div:nth-child(2) {
+  height: 120px;
+  width: 120px;
+  border: solid 10px transparent;
+  border-left-color: #9356DC;
+  border-top-color: #FF79DA;
+  border-bottom-color: #FF79DA;
+  animation: secondspin 2s infinite;
+  position: absolute;
 }
 
 .header {
@@ -334,12 +345,16 @@ body {
 .section_menu__card:nth-child(4) {
   animation-delay: 999ms;
 }
+.section_menu__card:nth-child(5) {
+  animation-delay: 1200ms;
+}
 .section_menu__card__text {
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin: 0;
   overflow: hidden;
+  width: 80%;
 }
 .section_menu__card__text h3 {
   margin: 0 0 5px 0;
@@ -433,9 +448,32 @@ body {
     visibility: hidden;
   }
 }
-@keyframes spin {
-  to {
+@keyframes firstspin {
+  0% {
+    transform: rotate(0deg);
+    border-width: 10px;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-width: 1px;
+  }
+  100% {
     transform: rotate(360deg);
+    border-width: 10px;
+  }
+}
+@keyframes secondspin {
+  0% {
+    transform: rotate(0deg);
+    border-width: 1px;
+  }
+  50% {
+    transform: rotate(-180deg);
+    border-width: 10px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    border-width: 1px;
   }
 }
 @media (min-width: 768px) {
@@ -465,6 +503,13 @@ body {
   }
   .footer {
     text-align: center;
+  }
+  .section_menu__all {
+    display: flex;
+    justify-content: space-around;
+  }
+  .section_menu__entrees, .section_menu__plats, .section_menu__desserts {
+    width: 30%;
   }
 }
 
