@@ -305,7 +305,7 @@ body {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 350ms;
-} 
+}
 .section_menu__titre .fa-solid:hover {
   opacity: 1;
   transform: scale(1.2);
