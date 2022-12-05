@@ -295,7 +295,7 @@ body {
 .section_menu__titre i {
   font-size: 1.5rem;
   position: absolute;
-  top: 4%;
+  top: 45px;
   right: 8%;
 }
 .section_menu__titre .fa-solid {
