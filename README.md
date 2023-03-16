@@ -10,6 +10,5 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 
 ### Technologies utilisées:
 
-HTML
-CSS
-Sass
+- HTML/CSS
+- Sass
