@@ -2,7 +2,7 @@
 
 ![Logo du site](https://github.com/CharonTom/OhMyFood/blob/main/images/ohmyfood%402x.svg)
 
-Ceci est mon troisième projet de ma formation OpenClassRooms.
+Ceci est le troisième projet de ma formation OpenClassRooms.
 
 ### J'ai développé un site web en intégrant la maquette réalisé par un designer UX depuis l'outil de design Figma.
 
