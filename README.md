@@ -1,6 +1,6 @@
-# Projet 3 : OhMyFood
+# Projet 3 : ![Logo du site](https://github.com/CharonTom/OhMyFood/blob/main/images/ohmyfood%402x.svg)
 
-![Logo du site](https://github.com/CharonTom/OhMyFood/blob/main/images/ohmyfood%402x.svg)
+
 
 Ceci est mon troisième projet de ma formation OpenClassRooms.
 
