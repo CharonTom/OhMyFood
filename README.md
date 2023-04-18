@@ -7,6 +7,7 @@ Ceci est le troisième projet de ma formation OpenClassRooms.
 ### J'ai développé un site web en intégrant la maquette réalisée par un designer UI depuis l'outil de design Figma.
 
 Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques.
+
 Le projet a été développé en HTML/CSS avec le préprocesseur SASS tout en gardant une approche mobile-first. Les contraintes graphiques et d'animations ont été faites sans JavaScript
 
 ---
